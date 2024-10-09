@@ -1,24 +1,28 @@
 :root {
-  --cor-primaria: #176585; /* Azul Escuro */
-  --cor-secundaria: #27b1bf; /* Azul médio */
-  --cor-terciaria: #36cecc; /* Azul forte */
-  --cor-destaque: #c2e4cb; /* Azul com bege */
-  --cor-fundo: #f7f3cf; /* Bege */
-  --cor-texto: #000000; /* preto */
-  --fonte-principal: Arial, Helvetica, sans-serif; /* Arial */
+  --cor-primaria: #ff1457;
+  --cor-secundaria: #613c4c;
+  --cor-terciaria: #453745;
+  --cor-fundo1: #35313b;
+  --cor-fundo2: #2b2c30;
+  --cor-texto: #fff;
+  --fonte-principal: Arial, Helvetica, sans-serif;
 }
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-fundo1);
 }
 header {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--cor-fundo2);
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
   height: 60px;
+}
+main {
+  background-color: var(--cor-fundo1);
 }
 nav ul {
   list-style-type: none;
