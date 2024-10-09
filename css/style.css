@@ -6,7 +6,7 @@
   --cor-fundo1: #35313b;
   --cor-fundo2: #2b2c30;
   --cor-texto: #fff;
-  --fonte-principal: "IBM Plex Mono", monospace;
+  --fonte-principal: Arial, sans-serif;
 }
 body {
   margin: 0;
@@ -42,6 +42,7 @@ nav li:hover {
 }
 .destaque {
   color: var(--cor-primaria);
+  font-weight: bold;
 }
 .container {
   display: flex;
