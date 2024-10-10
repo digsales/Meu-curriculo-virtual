@@ -1,3 +1,5 @@
+/* Cores e fontes gerais do projeto */
+
 :root {
   --cor-primaria: #ff1457;
   --cor-secundaria: #d85a7d;
@@ -6,8 +8,16 @@
   --cor-fundo1: #35313b;
   --cor-fundo2: #2b2c30;
   --cor-texto: #fff;
-  --fonte-principal: Arial, sans-serif;
+  --fonte-principal: "Afacad Flux", sans-serif;
 }
+
+.destaque {
+  color: var(--cor-primaria);
+  font-weight: bold;
+}
+
+/* Corpo do projeto */
+
 body {
   margin: 0;
   font-family: var(--fonte-principal);
@@ -37,18 +47,14 @@ header .logo {
   left: 20px;
 }
 header .btnContato {
-  /* padding: 5px;
-  background-color: var(--cor-primaria);
-  color: var(--cor-fundo2);
-  border-radius: 25%;
-  height: auto; */
   position: absolute;
   right: 20px;
 }
 header .btnContato button {
-  font-size: 18px;
-  padding: 10px 40px;
-  font-weight: 600;
+  font-family: var(--fonte-principal);
+  font-size: 21px;
+  padding: 5px 40px;
+  font-weight: 700;
   background-color: transparent;
   color: var(--cor-primaria);
   border: 2;
@@ -76,7 +82,7 @@ header nav li {
   border-bottom: 2px solid transparent;
 }
 header nav li a {
-  font-size: 18px;
+  font-size: 21px;
   color: var(--cor-texto);
   text-decoration: none;
 }
@@ -84,12 +90,8 @@ header nav li:hover {
   border-bottom: 2px solid var(--cor-primaria);
 }
 
-/* Estilo do corpo */
+/* Estilo do corpo página home */
 
-.destaque {
-  color: var(--cor-primaria);
-  font-weight: bold;
-}
 .container {
   display: flex;
   justify-content: space-around;
