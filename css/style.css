@@ -30,6 +30,7 @@ header {
   z-index: 1000;
 }
 nav ul {
+  font-size: 18px;
   list-style-type: none;
   margin: 0;
   padding: 0;
