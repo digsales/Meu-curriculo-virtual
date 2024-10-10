@@ -16,6 +16,18 @@
   font-weight: bold;
 }
 
+@keyframes moveImage {
+  0% {
+    transform: translate(0, -10px); /* Posição inicial */
+  }
+  50% {
+    transform: translate(0px, 10px); /* Move para baixo */
+  }
+  100% {
+    transform: translate(0, -10px); /* Volta para a posição inicial */
+  }
+}
+
 /* Corpo do projeto */
 
 body {
@@ -104,6 +116,7 @@ header nav li:hover {
   font-size: 103px;
 }
 .imageBox {
+  padding: 40px 20px;
   width: 100%;
   max-width: 500px;
   height: auto;
@@ -113,7 +126,9 @@ header nav li:hover {
   width: 500px;
   height: 500px;
   object-fit: cover;
-  clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+  border-radius: 50%;
+  box-shadow: 0 4px 20px var(--cor-primaria);
+  animation: moveImage 2s infinite;
 }
 
 /* Responsividade */
@@ -126,9 +141,10 @@ header nav li:hover {
   .btnContato {
     display: none;
   }
+
   /* Tela Home */
   .containerHome {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center; /* Garante que tudo fique centralizado verticalmente */
     align-items: center; /* Garante que tudo fique centralizado horizontalmente */
     text-align: center; /* Centraliza o texto */
