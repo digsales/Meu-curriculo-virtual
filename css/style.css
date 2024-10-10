@@ -14,11 +14,14 @@ body {
   background-color: var(--cor-fundo1);
   color: var(--cor-texto);
 }
+
+/* Estilo do cabeçalho */
+
 header {
   background-color: var(--cor-fundo2);
   color: var(--cor-texto);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 5px 20px;
   height: 60px;
@@ -29,23 +32,60 @@ header {
   right: 0;
   z-index: 1000;
 }
-nav ul {
+header .logo {
+  position: absolute;
+  left: 20px;
+}
+header .btnContato {
+  /* padding: 5px;
+  background-color: var(--cor-primaria);
+  color: var(--cor-fundo2);
+  border-radius: 25%;
+  height: auto; */
+  position: absolute;
+  right: 20px;
+}
+header .btnContato button {
   font-size: 18px;
+  padding: 10px 40px;
+  font-weight: 600;
+  background-color: transparent;
+  color: var(--cor-primaria);
+  border: 2;
+  border-radius: 30px;
+  border-color: #ff1457;
+  border-style: solid;
+  cursor: pointer;
+}
+header .btnContato button:hover {
+  border: 0;
+  background-color: var(--cor-primaria);
+  color: var(--cor-fundo2);
+}
+header nav ul {
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-nav li {
+header nav li {
   margin-left: 20px;
-  color: var(--cor-texto);
   padding: 8px;
   cursor: pointer;
   border-bottom: 2px solid transparent;
 }
-nav li:hover {
+header nav li a {
+  font-size: 18px;
+  color: var(--cor-texto);
+  text-decoration: none;
+}
+header nav li:hover {
   border-bottom: 2px solid var(--cor-primaria);
 }
+
+/* Estilo do corpo */
+
 .destaque {
   color: var(--cor-primaria);
   font-weight: bold;
