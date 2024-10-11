@@ -41,7 +41,7 @@ body {
 
 /* Estilo do cabeçalho */
 
-header {
+header .interface {
   background-color: var(--cor-fundo2);
   color: var(--cor-texto);
   display: flex;
@@ -105,7 +105,7 @@ header nav li:hover {
 
 /* Estilo do corpo página home */
 
-.containerHome {
+.telaInicio {
   display: flex;
   padding: 16px;
   justify-content: space-around;
@@ -148,15 +148,15 @@ header nav li:hover {
 
 @media screen and (max-width: 1020px) {
   /* Cabeçalho */
-  .menu {
+  header .menu {
     display: none;
   }
-  .btnContato {
+  header .btnContato {
     display: none;
   }
 
   /* Tela Home */
-  .containerHome {
+  .telaInicio {
     padding: 20px;
     flex-direction: column-reverse;
     justify-content: center; /* Garante que tudo fique centralizado verticalmente */
