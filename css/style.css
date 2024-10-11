@@ -16,6 +16,8 @@
   font-weight: bold;
 }
 
+/* Animação da imagem tela Home */
+
 @keyframes moveImage {
   0% {
     transform: translate(0, -10px); /* Posição inicial */
@@ -155,6 +157,7 @@ header nav li:hover {
 
   /* Tela Home */
   .containerHome {
+    padding: 20px;
     flex-direction: column-reverse;
     justify-content: center; /* Garante que tudo fique centralizado verticalmente */
     align-items: center; /* Garante que tudo fique centralizado horizontalmente */
@@ -169,6 +172,7 @@ header nav li:hover {
   }
   .resumo {
     margin-top: 30px;
+    text-align: justify;
   }
   .imageBox {
     align-items: center;
