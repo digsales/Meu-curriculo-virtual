@@ -171,17 +171,24 @@ header .btnContato button:hover {
   header .menu {
     display: none;
   }
-  header .btnContato {
-    display: none;
+  header .iconLinks {
+    justify-content: center;
+    position: static;
+    margin: 0 auto;
+    width: 100%;
   }
+
+  /* header .btnContato {
+    display: none;
+  } */
 
   /* Tela Home */
   .telaInicio {
     padding: 20px;
     flex-direction: column-reverse;
-    justify-content: center; /* Garante que tudo fique centralizado verticalmente */
-    align-items: center; /* Garante que tudo fique centralizado horizontalmente */
-    text-align: center; /* Centraliza o texto */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .nome {
     margin-top: -50px;
