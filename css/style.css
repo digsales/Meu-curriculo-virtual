@@ -30,6 +30,17 @@
   }
 }
 
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Corpo do projeto */
 
 body {
@@ -201,7 +212,7 @@ header .mobileMenu {
     width: 100%;
     display: block;
     text-align: end;
-    opacity: 0;
+    animation: navLinkFade 0.3s;
   }
   header .menu li a {
     display: block;
