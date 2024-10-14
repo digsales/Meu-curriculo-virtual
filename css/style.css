@@ -125,6 +125,11 @@ header .btnContato button:hover {
   color: var(--cor-fundo2);
 } */
 
+header .mobileMenu {
+  cursor: pointer;
+  display: none;
+}
+
 /* Estilo do corpo página home */
 
 .telaInicio {
@@ -171,6 +176,10 @@ header .btnContato button:hover {
 /* Responsividade */
 
 @media screen and (max-width: 1100px) {
+  body {
+    overflow-x: hidden;
+  }
+
   /* Cabeçalho */
   header .menu {
     position: absolute;
@@ -179,8 +188,8 @@ header .btnContato button:hover {
     right: 0;
     width: auto;
     background-color: var(--cor-fundo2);
+    transform: translateX(100%);
   }
-
   header .menu ul {
     flex-direction: column;
     align-items: flex-end;
@@ -191,6 +200,7 @@ header .btnContato button:hover {
     width: 100%;
     display: block;
     text-align: end;
+    opacity: 0;
   }
   header .menu li a {
     display: block;
@@ -202,6 +212,10 @@ header .btnContato button:hover {
     position: static;
     margin: 0 auto;
     width: 100%;
+  }
+
+  header .mobileMenu {
+    display: block;
   }
 
   /* header .btnContato {
@@ -237,4 +251,8 @@ header .btnContato button:hover {
     margin-bottom: -15px;
     z-index: 1;
   }
+}
+
+header .menu.active {
+  transform: translateX(0);
 }
