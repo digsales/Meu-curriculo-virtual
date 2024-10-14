@@ -137,7 +137,6 @@ header .btnContato button:hover {
 } */
 
 header .mobileMenu {
-  cursor: pointer;
   display: none;
 }
 
@@ -227,6 +226,7 @@ header .mobileMenu {
   }
 
   header .mobileMenu {
+    cursor: pointer;
     display: block;
   }
 
