@@ -166,7 +166,7 @@ header .btnContato button:hover {
 
 /* Responsividade */
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1100px) {
   /* Cabeçalho */
   header .menu {
     display: none;
