@@ -189,6 +189,7 @@ header .mobileMenu {
     width: auto;
     background-color: var(--cor-fundo2);
     transform: translateX(100%);
+    transition: transform 0.3s ease-in;
   }
   header .menu ul {
     flex-direction: column;
