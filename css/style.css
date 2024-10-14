@@ -138,6 +138,7 @@ header .btnContato button:hover {
 } */
 
 header .mobileMenu {
+  font-size: 24px;
   display: none;
 }
 
