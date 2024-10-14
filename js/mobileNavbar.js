@@ -17,6 +17,7 @@ class MobileNavbar {
 
   handleClick() {
     this.navList.classList.toggle(this.activeClass);
+    this.mobileMenu.classList.toggle(this.activeClass);
     this.animatedLinks();
 
     // Adiciona o evento de clique fora do menu apenas quando o menu está ativo

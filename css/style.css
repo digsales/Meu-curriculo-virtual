@@ -231,6 +231,9 @@ header .mobileMenu {
     cursor: pointer;
     display: block;
   }
+  header .mobileMenu .fechar {
+    display: none;
+  }
 
   /* header .btnContato {
     display: none;
@@ -269,4 +272,10 @@ header .mobileMenu {
 
 header .menu.active {
   transform: translateX(0);
+}
+header .mobileMenu.active .abrir {
+  display: none;
+}
+header .mobileMenu.active .fechar {
+  display: block;
 }
