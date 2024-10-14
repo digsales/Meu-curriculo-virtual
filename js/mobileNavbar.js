@@ -6,6 +6,7 @@ class MobileNavbar {
     this.activeClass = "active";
 
     this.handleClick = this.handleClick.bind(this);
+    this.handleClickOutside = this.handleClickOutside.bind(this);
   }
 
   animatedLinks() {
@@ -17,6 +18,22 @@ class MobileNavbar {
   handleClick() {
     this.navList.classList.toggle(this.activeClass);
     this.animatedLinks();
+
+    // Adiciona o evento de clique fora do menu apenas quando o menu está ativo
+    if (this.navList.classList.contains(this.activeClass)) {
+      document.addEventListener("click", this.handleClickOutside);
+    } else {
+      document.removeEventListener("click", this.handleClickOutside);
+    }
+  }
+
+  handleClickOutside(event) {
+    // Verifica se o clique foi fora do menu e do botão mobile
+    if (!this.navList.contains(event.target) && !this.mobileMenu.contains(event.target)) {
+      this.navList.classList.remove(this.activeClass);
+      this.animatedLinks(); // Reseta animação dos links
+      document.removeEventListener("click", this.handleClickOutside);
+    }
   }
 
   addClickEvent() {
