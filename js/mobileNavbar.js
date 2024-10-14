@@ -32,6 +32,7 @@ class MobileNavbar {
     // Verifica se o clique foi fora do menu e do botão mobile
     if (!this.navList.contains(event.target) && !this.mobileMenu.contains(event.target)) {
       this.navList.classList.remove(this.activeClass);
+      this.mobileMenu.classList.remove(this.activeClass);
       this.animatedLinks(); // Reseta animação dos links
       document.removeEventListener("click", this.handleClickOutside);
     }
