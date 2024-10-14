@@ -56,7 +56,8 @@ header .interface {
   background-color: var(--cor-fundo2);
   color: var(--cor-texto);
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
   height: 60px;
@@ -68,8 +69,8 @@ header .interface {
 }
 
 header .logo {
-  position: absolute;
-  left: 20px;
+  font-size: 43px;
+  font-weight: bold;
 }
 
 header .menu ul {
@@ -101,8 +102,8 @@ header .menu li:hover {
 header .iconLinks {
   display: flex;
   gap: 20px;
-  position: absolute;
-  right: 20px;
+  /* position: absolute; */
+  /* right: 20px; */
 }
 header .iconLinks a {
   text-decoration: none;
