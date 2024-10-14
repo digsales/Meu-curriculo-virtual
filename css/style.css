@@ -61,25 +61,28 @@ header .logo {
   left: 20px;
 }
 
-header nav ul {
+header .menu ul {
   justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-header nav li {
+header .menu li {
   margin-left: 20px;
   padding: 8px;
   cursor: pointer;
   border-bottom: 2px solid transparent;
 }
-header nav li a {
+header .menu li a {
   font-size: 21px;
   color: var(--cor-texto);
   text-decoration: none;
 }
-header nav li:hover {
+header .menu li a.destaque {
+  color: var(--cor-primaria);
+}
+header .menu li:hover {
   border-bottom: 2px solid var(--cor-primaria);
 }
 
