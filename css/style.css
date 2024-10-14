@@ -277,5 +277,6 @@ header .mobileMenu.active .abrir {
   display: none;
 }
 header .mobileMenu.active .fechar {
+  font-size: 21px;
   display: block;
 }
