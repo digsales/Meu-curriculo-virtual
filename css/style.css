@@ -225,10 +225,10 @@ footer .entrada {
   align-items: center;
   padding: 5px 15px 5px 10px;
   margin-bottom: 20px;
-  background-color: var(--cor-fundo1);
+  background-color: transparent;
   border: 2;
   border-radius: 30px;
-  border-color: var(--cor-terciaria);
+  border-color: var(--cor-primaria);
   border-style: solid;
 }
 footer .entrada i {
@@ -248,6 +248,27 @@ footer .entrada input:focus,
 footer .entrada textarea:focus {
   outline: none;
   border: 0;
+}
+header .btnContato {
+  position: absolute;
+  right: 20px;
+}
+footer button {
+  font-family: var(--fonte-principal);
+  font-size: 21px;
+  padding: 5px 40px;
+  font-weight: 700;
+  background-color: transparent;
+  color: var(--cor-primaria);
+  border: 2;
+  border-radius: 30px;
+  border-color: var(--cor-primaria);
+  border-style: solid;
+  cursor: pointer;
+}
+footer button:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-fundo2);
 }
 
 /* Responsividade */
@@ -329,6 +350,18 @@ footer .entrada textarea:focus {
     margin-top: -10px;
     margin-bottom: -15px;
     z-index: 1;
+  }
+
+  /* Estilo do rodapé */
+
+  footer .cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo2);
   }
 }
 
