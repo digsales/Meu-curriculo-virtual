@@ -203,7 +203,7 @@ footer h1 {
 footer .menuSocial {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 100px;
 }
 footer .menuSocial ul {
   list-style-type: none;
@@ -226,7 +226,7 @@ footer .entrada {
   padding: 5px 15px 5px 10px;
   margin-bottom: 20px;
   background-color: transparent;
-  border: 2;
+  border: 2px;
   border-radius: 30px;
   border-color: var(--cor-primaria);
   border-style: solid;
@@ -245,7 +245,8 @@ footer .entrada textarea {
   font-family: var(--fonte-principal);
 }
 footer .entrada textarea {
-  resize: vertical;
+  height: 150px;
+  resize: none;
   width: 100%;
 }
 footer .entrada input:focus,
