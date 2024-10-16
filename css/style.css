@@ -244,6 +244,10 @@ footer .entrada textarea {
   font-size: 18px;
   font-family: var(--fonte-principal);
 }
+footer.entrada textarea {
+  resize: vertical;
+  width: 100%;
+}
 footer .entrada input:focus,
 footer .entrada textarea:focus {
   outline: none;
