@@ -186,7 +186,7 @@ header .mobileMenu {
 
 /* Estilo do rodapé */
 
-footer .cabecalho {
+footer .rodape {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
