@@ -99,23 +99,33 @@
               <i class="fa-solid fa-user"></i>
               <input type="email" id="email" placeholder="E-mail" required />
             </div>
+            <div class="errorMessage" id="emailError" style="color: red"></div>
+            <!-- Mensagem de erro para o email -->
+
             <div class="entrada">
               <i class="fa-solid fa-tag"></i>
               <input type="text" id="assunto" placeholder="Assunto" required />
             </div>
+            <div class="errorMessage" id="assuntoError" style="color: red"></div>
+            <!-- Mensagem de erro para o assunto -->
+
             <div class="entrada">
               <i class="fa-solid fa-pen"></i>
               <textarea id="conteudo" rows="4" placeholder="Conteúdo" required></textarea>
             </div>
+            <div class="errorMessage" id="conteudoError" style="color: red"></div>
+            <!-- Mensagem de erro para o conteúdo -->
           </div>
           <div>
-            <button>Enviar</button>
+            <button id="btnEnviar">Enviar</button>
           </div>
         </div>
       </div>
     </footer>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/dadosEmail.js"></script>
+    <script src="js/validacoes.js"></script>
     <script src="js/enviarEmail.js"></script>
   </body>
 </html>
