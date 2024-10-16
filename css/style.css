@@ -4,7 +4,6 @@
   --cor-primaria: #ff1457;
   --cor-secundaria: #d85a7d;
   --cor-terciaria: #613c4c;
-  --cor-quaternaria: #453745;
   --cor-fundo1: #35313b;
   --cor-fundo2: #2b2c30;
   --cor-texto: #fff;
@@ -183,6 +182,41 @@ header .mobileMenu {
   border-radius: 50%;
   box-shadow: 0 4px 20px var(--cor-primaria);
   animation: moveImage 2s infinite;
+}
+
+/* Estilo do rodapé */
+
+footer .cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--cor-fundo2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: auto;
+}
+footer .menuSocial {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+footer .menuSocial h1 {
+  color: var(--cor-primaria);
+  letter-spacing: 3px;
+}
+footer .menuSocial ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer .menuSocial li {
+  margin-bottom: 10px;
+}
+footer .menuSocial li a {
+  font-size: 20px;
+  color: var(--cor-texto);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Responsividade */
