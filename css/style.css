@@ -219,12 +219,16 @@ footer .menuSocial li a {
   text-decoration-thickness: 1px;
   text-decoration-color: rgba(255, 255, 255, 0.6);
 }
+footer .enviarEmail {
+  width: 500px;
+  min-width: auto;
+}
 footer .entrada {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 5px 15px 5px 10px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   background-color: transparent;
   border: 2px;
   border-radius: 30px;
@@ -259,6 +263,7 @@ header .btnContato {
   right: 20px;
 }
 footer button {
+  margin-top: 20px;
   font-family: var(--fonte-principal);
   font-size: 21px;
   padding: 5px 40px;
@@ -274,6 +279,12 @@ footer button {
 footer button:hover {
   background-color: var(--cor-primaria);
   color: var(--cor-fundo2);
+}
+footer .desktop ul {
+  text-align: end;
+}
+footer .mobile {
+  display: none;
 }
 
 /* Responsividade */
@@ -365,9 +376,18 @@ footer button:hover {
     padding-bottom: 30px;
     align-items: center;
   }
+  footer .enviarEmail {
+    width: auto;
+  }
   footer button {
     background-color: var(--cor-primaria);
     color: var(--cor-fundo2);
+  }
+  footer .mobile {
+    display: block;
+  }
+  footer .desktop {
+    display: none;
   }
 }
 
