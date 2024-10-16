@@ -222,6 +222,7 @@ footer .menuSocial li a {
 footer .enviarEmail {
   width: 500px;
   min-width: auto;
+  text-align: center;
 }
 footer .entrada {
   display: flex;
