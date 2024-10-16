@@ -196,14 +196,14 @@ footer .cabecalho {
   height: auto;
   padding-bottom: 20px;
 }
+footer h1 {
+  color: var(--cor-primaria);
+  letter-spacing: 3px;
+}
 footer .menuSocial {
   display: flex;
   flex-direction: row;
   gap: 50px;
-}
-footer .menuSocial h1 {
-  color: var(--cor-primaria);
-  letter-spacing: 3px;
 }
 footer .menuSocial ul {
   list-style-type: none;
@@ -218,6 +218,36 @@ footer .menuSocial li a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-decoration-color: rgba(255, 255, 255, 0.6);
+}
+footer .entrada {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 15px 5px 10px;
+  margin-bottom: 20px;
+  background-color: var(--cor-fundo1);
+  border: 2;
+  border-radius: 30px;
+  border-color: var(--cor-terciaria);
+  border-style: solid;
+}
+footer .entrada i {
+  margin-right: 10px;
+  color: var(--cor-primaria);
+}
+footer .entrada input,
+footer .entrada textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  color: var(--cor-texto);
+  font-size: 18px;
+  font-family: var(--fonte-principal);
+}
+footer .entrada input:focus,
+footer .entrada textarea:focus {
+  outline: none;
+  border: 0;
 }
 
 /* Responsividade */
