@@ -204,6 +204,7 @@ header .mobileMenu {
     transition: transform 0.3s ease-in;
   }
   header .menu ul {
+    gap: 0;
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
