@@ -359,9 +359,10 @@ footer button:hover {
 
   /* Estilo do rodapé */
 
-  footer .cabecalho {
+  footer .rodape {
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
     align-items: center;
   }
   footer button {
